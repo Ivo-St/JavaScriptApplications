@@ -1,0 +1,1 @@
+var switchColor = switchColor || {};
