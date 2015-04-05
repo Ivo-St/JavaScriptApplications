@@ -8,7 +8,7 @@
     var table = $('<table>');
     table.css('border', '1px solid');
     $('body').append(table);
-    $('table').append('<tr>');
+    $(table).append('<tr>');
     keys.forEach(function (key) {
         var td = $('<td>');
         td.css('border', '1px solid');
@@ -31,5 +31,5 @@
         });
     });
 
-    //todo split the code in functions
+    //fixme split the code in functions?
 }());
