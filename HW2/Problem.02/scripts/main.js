@@ -63,14 +63,7 @@ var poll = poll || {};
         localStorage.clear();
         poll.stopTimer();
         $('input').removeAttr('disabled');
-        resetAnswers();
         initPage();
-    }
-
-    function resetAnswers() {
-        for (var i = 1; i < 5; i++) {
-            $('#q' + (i) + 'a' + 1).attr('checked', 'checked');
-        }
     }
 
     document.onload = initPage();
