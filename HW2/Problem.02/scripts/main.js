@@ -44,11 +44,11 @@ var poll = poll || {};
 
     function initPage() {
         $('label').css('background', 'white');
+
         if (!localStorage['submited']) {
             poll.startTimer(5, 0);
         } else {
             $('input').attr('disabled', "");
-            //showCorrectAnswers();
         }
         refillAnswers();
     }
