@@ -1,5 +1,5 @@
 (function () {
-    if (!localStorage["name"]) {
+    if (!localStorage['name']) {
         console.log("i run");
         var input = $('<input>');
         input.attr('type', 'text');
