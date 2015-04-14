@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>List Towns by Country</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+    <div id="inputContainer">
+        <input type="text" id="addTown" placeholder="Add Town (name)" />
+        <input type="text" id="country" placeholder="Town's country (countryId)" />
+        <button id="add">Add Town</button>
+        <br />
+        <input type="text" id="deleteTown" placeholder="Delete Town (objectId)" />
+        <button id="delete">Delete Town</button>
+        <br />
+        <input type="text" id="newName" placeholder="Enter the new name" />
+        <input type="text" id="objectId" placeholder="Enter the objectId" />
+        <button id="submitChange">Submit Change</button>
+        <br />
+        <input type="text" id="selectCountry" placeholder="Display Town by Country" />
+        <button id="submitCountry">Display Towns by Country</button>
+        <br />
+        <button id="getIds">Get Towns Ids</button>
+        <button id="getCountryIds">Get Countries Ids</button>
+    </div>
+    <div id="towns"></div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

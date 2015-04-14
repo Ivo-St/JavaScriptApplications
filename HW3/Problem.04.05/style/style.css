@@ -1,0 +1,8 @@
+#towns {
+    display: inline-block;
+    background-color: darkgray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+}
