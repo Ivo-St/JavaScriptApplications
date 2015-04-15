@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books</title>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+    <div id="booksContainer"></div>
+    <div id="formContainer">
+        <form>
+            <div id="titleContainer">
+                <input type="text" placeholder="Title" required id="title" />
+            </div>
+            <div id="authorContainer">
+                <input type="text" placeholder="Author" required id="author" />
+            </div>
+            <div id="isbnContainer">
+                <input type="text" placeholder="ISBN" id="isbn" />
+            </div>
+            <div id="submitContainer">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="scripts/loadBooks.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
