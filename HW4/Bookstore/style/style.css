@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+#container {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+    padding: 10px;
+}
+
+.del {
+    border-radius: 30px;
+    background-color: gray;
+    margin-left: 13px;
+    padding: 3px;
+}
+
+.book {
+    border: 1px dashed;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: darkgray;
+    font-style: italic;
+    padding: 10px;
+    margin: 5px;
+}
+
+.formContainer {
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    background-color: lightgray;
+    text-align: right;
+}
+
+input {
+    margin: 5px;
+}
+
+label {
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+}

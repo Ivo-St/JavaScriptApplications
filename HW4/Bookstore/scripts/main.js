@@ -4,7 +4,7 @@
     var url = 'https://api.parse.com/1/classes/Book';
     var books;
 
-    $(document).ready(getBooks());
+    $(document).ready(resetList());
     $('#createElement').submit(createNewBook);
     $('#editElement').submit(submitEdittedBook);
 
@@ -39,15 +39,21 @@
                 if (data['results'][key]['isbn']) {
                     text += ' ISBN: ' + data['results'][key]['isbn'];
                 }
+                var delButton = $('<button>')
+                    .text('Delete')
+                    .addClass('del');
 
                 $('<div>').addClass('book')
                     .attr('id', books.length)
                     .text(text)
+                    .append(delButton)
                     .appendTo($('#booksContainer'));
 
                 books.push(book);
             }
             $('.book').click(editBook);
+            $('<br>').insertAfter('.book ');
+            $('.del').click(deleteBook);
         }
     }
 
@@ -121,5 +127,23 @@
         });
 
         return false; //stops the page from reloading
+    }
+
+    function deleteBook(event) {
+        var target = $(event['currentTarget']['parentNode']);
+        var book = books[target.attr('id')];
+        var id = book.objectId;
+
+        $.ajax({
+            method: 'delete',
+            url: url + '/' + id,
+            headers: {
+                'X-Parse-Application-Id': appId,
+                'X-Parse-REST-API-Key': RESTKey
+            }
+        }).success(function (data) {
+            alert('Successfully Deleted element with id: ' + id);
+            resetList();
+        });
     }
 }());

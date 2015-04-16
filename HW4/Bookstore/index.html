@@ -4,47 +4,57 @@
 <head>
     <title>Books</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-    <div id="booksContainer"></div>
-    <div id="formContainer">
-        <h3>Create new entry</h3>
-        <form id="createElement">
-            <div id="titleContainer">
-                <input type="text" placeholder="Title" required id="title" />
-            </div>
-            <div id="authorContainer">
-                <input type="text" placeholder="Author" required id="author" />
-            </div>
-            <div id="isbnContainer">
-                <input type="text" placeholder="ISBN" id="isbn" />
-            </div>
-            <div id="submitContainer">
-                <input type="submit" value="Submit" id="submit">
-            </div>
-        </form>
-    </div>
-    <div>
-        <h3>Edit entry</h3>
-        <form id="editElement">
-            <div id="edittitleContainer">
-                <input type="text" placeholder="Edit Title" required id="editTitle" />
-            </div>
-            <div id="editauthorContainer">
-                <input type="text" placeholder="Edit Author" required id="editAuthor" />
-            </div>
-            <div id="editisbnContainer">
-                <input type="text" placeholder="Edit ISBN" id="editIsbn" />
-            </div>
-            <div>
-                <input type="text" required readonly value="objectId" id="id" />
-            </div>
-            <div id="submitEsitContainer">
-                <input type="submit" value="Submit Edit" id="submitEdit">
-            </div>
-        </form>
+    <div id="container">
+        <div id="booksContainer"></div>
+        <div class="formContainer">
+            <h3>Edit entry</h3>
+            <form id="editElement">
+                <div id="edittitleContainer">
+                    <label>Title</label>
+                    <input type="text" placeholder="Edit Title" required id="editTitle" />
+                </div>
+                <div id="editauthorContainer">
+                    <label>Author</label>
+                    <input type="text" placeholder="Edit Author" required id="editAuthor" />
+                </div>
+                <div id="editisbnContainer">
+                    <label>ISBN</label>
+                    <input type="text" placeholder="Edit ISBN" id="editIsbn" />
+                </div>
+                <div>
+                    <label>Book's Id</label>
+                    <input type="text" required readonly value="objectId" id="id" />
+                </div>
+                <div id="submitEsitContainer">
+                    <input type="submit" value="Submit Edit" id="submitEdit">
+                </div>
+            </form>
+        </div>
+        <div class="formContainer">
+            <h3>Create new entry</h3>
+            <form id="createElement">
+                <div id="titleContainer">
+                    <label>Title</label>
+                    <input type="text" placeholder="Title" required id="title" />
+                </div>
+                <div id="authorContainer">
+                    <label>Author</label>
+                    <input type="text" placeholder="Author" required id="author" />
+                </div>
+                <div id="isbnContainer">
+                    <label>ISBN</label>
+                    <input type="text" placeholder="ISBN" id="isbn" />
+                </div>
+                <div id="submitContainer">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
     </div>
     <script src="scripts/loadBooks.js"></script>
     <script src="scripts/main.js"></script>
