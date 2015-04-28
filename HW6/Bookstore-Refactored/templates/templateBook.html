@@ -1,0 +1,8 @@
+<div id="booksContainer">
+    {{#books}}
+    <div class="book" id="{{objectId}}">
+        <span class="title">{{title}}</span> : <span class="author">{{author}}</span> {{#isbn}}ISBN: <span class="isbn">{{.}}</span>{{/isbn}}
+        <button class="del">Delete</button>
+    </div>
+    {{/books}}
+</div>

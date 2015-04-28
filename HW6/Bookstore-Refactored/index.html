@@ -2,15 +2,17 @@
 <html>
 
 <head>
-    <title>Books</title>
+    <title>Books Refactored</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="scripts/libs/jquery.js"></script>
+    <script src="scripts/libs/mustache.js"></script>
+    <script src="scripts/libs/q.js"></script>
+    <script src="scripts/libs/lodash.js"></script>
 </head>
 
 <body>
     <div id="container">
-        <div id="booksContainer"></div>
         <div class="formContainer">
             <h3>Edit entry</h3>
             <form id="editElement">
@@ -56,8 +58,15 @@
             </form>
         </div>
     </div>
-    <script src="scripts/loadBooks.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/models/booksDataModel.js"></script>
+    <script src="scripts/models/headers.js"></script>
+    <script src="scripts/models/requester.js"></script>
+    <script src="scripts/views/allBooksView.js"></script>
+    <script src="scripts/views/deleteElementView.js"></script>
+    <script src="scripts/views/fillEditView.js"></script>
+    <script src="scripts/views/updateBookElement.js"></script>
+    <script src="scripts/controllers/booksControler.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

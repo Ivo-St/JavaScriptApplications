@@ -20,7 +20,7 @@ body {
 .book {
     border: 1px dashed;
     border-radius: 5px;
-    display: inline-block;
+    display: block;
     background-color: darkgray;
     font-style: italic;
     padding: 10px;
